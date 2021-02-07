@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Practice Site</title>
+    <link rel="icon" href="http://www.ecobankingproject.org/wp-content/uploads/2015/10/hoja-motivo-1.png">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="d-inline-block align-top me-3" style="width: 10%;"
+                        src="http://www.ecobankingproject.org/wp-content/uploads/2015/10/hoja-motivo-1.png" alt="">
+                    Spring Practice Site</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container my-5">
+            <div class="col-lg-7 mx-auto">
+                <form action="profile.html" class="card shadow">
+
+                    <div class="card-body">
+                        <h1 class="card-title display-5 text-center my-4">Create your account</h1>
+
+                        <div class="container p-5">
+                            <div class="row mb-3">
+                                <label for="name" class="col-xl-3 col-form-label required-symbol">Name(s)</label>
+                                <div class="col-xl-9">
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="last_name" class="col-xl-3 col-form-label required-symbol">Last Name</label>
+                                <div class="col-xl-9">
+                                    <input type="text" class="form-control" id="last_name">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="username" class="col-xl-3 col-form-label required-symbol">Date of
+                                    birth</label>
+                                <div class="col-xl-9">
+                                    <input type="date" class="form-control" id="username">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="username" class="col-xl-3 col-form-label required-symbol">Username</label>
+                                <div class="col-xl-9">
+                                    <input type="text" class="form-control" id="username"
+                                        aria-describedby="usernameHelpBlock">
+                                    <div class="form-text" id="usernameHelpBlock">
+                                        Others users will find you with this name in the plataform.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="email" class="col-xl-3 col-form-label required-symbol">Email</label>
+                                <div class="col-xl-9">
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="password" class="col-xl-3 col-form-label required-symbol">Password</label>
+                                <div class="col-xl-9">
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                            </div>
+
+                            <div class="d-grid mt-5">
+                                <input type="submit" class="btn btn-success btn-lg" value="Create account">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        let labels = document.getElementsByClassName("required-symbol");
+        let arrayLabels = Array.from(labels);
+
+        arrayLabels.forEach(element => {
+            element.innerHTML += " <snap class='text-danger'>*</span>";
+        });
+    </script>
+
+</body>
+
+</html>
