@@ -33,6 +33,15 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="viewsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Views</a>
+                            <ul class="dropdown-menu" aria-labelledby="viewsDropdown">
+                                <li><a href="index.html" class="dropdown-item">Index</a></li>
+                                <li><a href="signup.html" class="dropdown-item">Sign up</a></li>
+                                <li><a href="profile.html" class="dropdown-item">Profile</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Products</a>
                         </li>
@@ -47,10 +56,74 @@
 
     <main>
 
-        
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-2">
+                    <img src="https://ath2.unileverservices.com/wp-content/uploads/sites/4/2016/04/ginger-hair-instagram-crimson-and-clover_-500x500.png"
+                        class="rounded-circle img-fluid" alt="">
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <div class="col-10 offset-md-1">
+                            <h1>Elijah Owens Beulah</h1>
+                            <h3 class="lead">@elijah.owens</h3>
+                            <br>
+                            <h6>Description:</h6>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima aliquam qui quam
+                                nesciunt culpa. Corrupti unde quo quaerat non earum quia repellat sit. Laudantium,
+                                laborum minus asperiores culpa architecto autem incidunt blanditiis commodi nihil quasi
+                                doloribus voluptatibus aliquam esse voluptate illum magni quod ea sed? Et quidem
+                                doloremque sit iusto!</p>
+                        </div>
+                        <div class="col-1">
+                            <a href="#"  title="Update profile">
+                                <img src="https://img.icons8.com/cotton/2x/settings.png" class="img-fluid w-75 border border-2 p-2 rounded-circle">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-2">
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <div class="col-11 offset-md-1">
+                            <h4>Personal Info.</h4>
+                            <hr>
+                            <table class="table table-borderless lead">
+                                <tr>
+                                    <td>Full name:</td>
+                                    <td>Elijah Owens Beulah</td>
+                                </tr>
+                                <tr>
+                                    <td>Nickname:</td>
+                                    <td>@elijah.owens</td>
+                                </tr>
+                                <tr>
+                                    <td>Gerne:</td>
+                                    <td>Female</td>
+                                </tr>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>elijah.owens@email.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Date of birth:</td>
+                                    <td>01/11/1998</td>
+                                </tr>
+                                <tr>
+                                    <td>Country:</td>
+                                    <td>Ireland</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
-
 
 
 
@@ -58,15 +131,6 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
 
-        
-    <script>
-        let labels = document.getElementsByClassName("required-symbol");
-        let arrayLabels = Array.from(labels);
-
-        arrayLabels.forEach(element => {
-            element.innerHTML += " <snap class='text-danger'>*</span>";
-        });
-    </script>
 
 </body>
 
